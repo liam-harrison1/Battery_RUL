@@ -1,0 +1,32 @@
+2025-10-21 10:19:18,182 - INFO - ============================================================
+2025-10-21 10:19:18,183 - INFO - Starting prediction on test set
+2025-10-21 10:19:18,183 - INFO - Device: cuda
+2025-10-21 10:19:18,183 - INFO - Run directory: H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607
+2025-10-21 10:19:18,186 - INFO - ============================================================
+2025-10-21 10:19:18,211 - INFO - Model type: SAETR
+2025-10-21 10:19:18,212 - INFO - Target transform mode: standardize
+2025-10-21 10:19:18,212 - INFO - Loading scaler...
+2025-10-21 10:19:18,214 - INFO - Loading sequences...
+2025-10-21 10:19:18,243 - INFO - Test set: X(1415, 30, 10), y(1415,), meta=1415 rows
+2025-10-21 10:19:18,251 - INFO - Loading SAETR model...
+2025-10-21 10:19:18,423 - INFO - Loaded model from epoch 69 with val MAE=33.8560
+2025-10-21 10:19:18,424 - INFO - Performing conformal calibration on validation set...
+2025-10-21 10:19:18,561 - INFO - Conformal alpha (tau=0.8): 17.1677
+2025-10-21 10:19:18,561 - INFO - Predicting on test set...
+2025-10-21 10:19:18,587 - INFO - ============================================================
+2025-10-21 10:19:18,588 - INFO - Test Set Performance (SAETR):
+2025-10-21 10:19:18,588 - INFO -   MAE:  10.4289
+2025-10-21 10:19:18,588 - INFO -   RMSE: 14.7091
+2025-10-21 10:19:18,588 - INFO -   MAPE: 7.68%
+2025-10-21 10:19:18,588 - INFO - ============================================================
+2025-10-21 10:19:19,314 - INFO - Saved scatter plot to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607\predictions\test_scatter_pred_vs_true.png
+2025-10-21 10:19:19,453 - INFO - Prediction interval coverage: 0.975
+2025-10-21 10:19:19,453 - INFO - Saved coverage plot to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607\predictions\quantile_coverage.png
+2025-10-21 10:19:19,472 - INFO - Saved detailed predictions to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607\predictions\predictions_test.csv
+2025-10-21 10:19:19,493 - INFO - Saved per-battery statistics to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607\predictions\battery_statistics.csv
+2025-10-21 10:19:19,494 - INFO - Generating per-battery prediction curves...
+2025-10-21 10:19:21,544 - INFO - Saved 20 battery curves to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607\predictions\per_battery_traces
+2025-10-21 10:19:21,555 - INFO - Saved summary report to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_saetr_20251021_101607\predictions\summary_report.txt
+2025-10-21 10:19:21,555 - INFO - ============================================================
+2025-10-21 10:19:21,556 - INFO - Prediction completed successfully!
+2025-10-21 10:19:21,556 - INFO - ============================================================

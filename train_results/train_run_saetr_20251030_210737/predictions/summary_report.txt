@@ -1,0 +1,30 @@
+============================================================
+Battery RUL Prediction - Test Set Summary
+Model: SAETR
+============================================================
+
+Test samples: 1375
+Unique batteries: 20
+
+Overall Performance:
+  MAE:  7.9408 cycles
+  RMSE: 11.0813 cycles
+  MAPE: 5.02%
+
+Prediction Interval (tau=0.8):
+  Coverage: 0.919
+  Conformal alpha: 0.0501
+
+Top 5 Batteries by MAE:
+  EL150800460468: MAE=13.55, MAPE=6.40%
+  EL150800460647: MAE=10.80, MAPE=6.15%
+  EL150800460477: MAE=10.50, MAPE=3.88%
+  el150800737368: MAE=9.48, MAPE=4.27%
+  el150800460628: MAE=8.97, MAPE=5.89%
+
+Top 5 Batteries by Accuracy:
+  EL150800460636: MAE=4.02, MAPE=3.48%
+  el150800460527: MAE=4.87, MAPE=4.11%
+  EL150800460436: MAE=5.56, MAPE=2.45%
+  el150800460614: MAE=5.84, MAPE=4.37%
+  el150800460608: MAE=5.88, MAPE=13.72%

@@ -1,0 +1,30 @@
+============================================================
+Battery RUL Prediction - Test Set Summary
+Model: TRANSFORMER
+============================================================
+
+Test samples: 1415
+Unique batteries: 20
+
+Overall Performance:
+  MAE:  9.8267 cycles
+  RMSE: 13.1148 cycles
+  MAPE: 9.24%
+
+Prediction Interval (tau=0.8):
+  Coverage: 0.985
+  Conformal alpha: 7.2601
+
+Top 5 Batteries by MAE:
+  EL150800460647: MAE=16.81, MAPE=16.48%
+  EL150800460658: MAE=15.45, MAPE=11.22%
+  EL150800460477: MAE=12.12, MAPE=6.36%
+  EL150800460436: MAE=12.01, MAPE=8.18%
+  EL150800463882: MAE=11.55, MAPE=6.84%
+
+Top 5 Batteries by Accuracy:
+  el150800460628: MAE=4.49, MAPE=4.15%
+  el150800460527: MAE=5.25, MAPE=3.14%
+  el150800460614: MAE=5.26, MAPE=5.11%
+  EL150800460656: MAE=6.45, MAPE=2555636736.00%
+  el150800460510: MAE=6.92, MAPE=18.13%

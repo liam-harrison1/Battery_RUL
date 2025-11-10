@@ -1,0 +1,14 @@
+{
+  "feature_cols": [
+    "qstat_mean",
+    "qstat_q3",
+    "qstat_iqr",
+    "qstat_var",
+    "qstat_max",
+    "qd_ah",
+    "dqdv_xmean",
+    "ro_ohm",
+    "dqdv_xmedi",
+    "cycle_frac"
+  ]
+}

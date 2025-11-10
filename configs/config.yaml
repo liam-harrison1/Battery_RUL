@@ -1,0 +1,68 @@
+# Project configuration file
+
+paths:
+  data_dir: "data/final_dataset"
+  processed_dir: "data/processed"
+  experiment_base_dir: train_results
+  checkpoint_dir: checkpoints
+  results_dir: pridict_results
+
+data_params:
+  window: 60        # Sequence window length
+  stride: 10          # Sliding window stride
+  min_cycles: 180       # Minimum cycles for a battery to be included
+
+model_params:
+  sae_dim: 32           # Sparse autoencoder hidden dimension
+  d_model: 128          # Transformer model dimension
+  nhead: 4              # Number of attention heads
+  nlayers: 2            # Number of transformer layers
+  use_cnn: true         # Whether to use CNN layers
+  cnn_channels: 64      # CNN output channels
+  quantiles: [0.1, 0.5, 0.9]  # Prediction quantiles
+
+train_params:
+  batch_size: 128
+  epochs: 200
+  learning_rate:  0.0005  #0.0003 #5e-4
+  weight_decay:   0.00003      #0.0001  #3e-5
+  alpha_recon: 0.2      # Reconstruction loss weight
+  beta_sparse: 0.001    # Sparsity loss weight
+  y_transform: "standardize"  # Options: "none", "standardize", "log1p"
+  patience: 20          # Early stopping patience
+  grad_clip: 1.0        # Gradient clipping max norm
+  
+eval_params:
+  tau: 0.8              # Target coverage rate for conformal prediction
+## ------------------------------------------------------
+# configs/config.yaml
+
+# ... existing config ...
+
+early_prediction:
+  # Early cycle thresholds to evaluate
+  thresholds: [30, 50, 75, 100, 150]
+  
+  # Minimum cycles required for prediction
+  min_cycles: 20
+  
+  # Methods to use
+  methods:
+    - saetr
+    - partial_discharge
+    - knee_point
+    - ensemble
+  
+  # Knee point detection parameters
+  knee_detection:
+    threshold_drop: 0.02
+    min_cycles_before_knee: 30
+  
+  # Partial discharge parameters
+  partial_discharge:
+    voltage_range: [3.5, 3.1]
+    
+  # Iterative prediction parameters
+  iterative:
+    max_future_cycles: 500
+    feature_prediction_method: 'linear'  # 'linear', 'arima', 'lstm'

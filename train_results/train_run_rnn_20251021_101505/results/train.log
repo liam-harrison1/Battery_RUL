@@ -1,0 +1,31 @@
+2025-10-21 10:15:05,949 - INFO - ============================================================
+2025-10-21 10:15:05,949 - INFO - Starting training: Model = RNN
+2025-10-21 10:15:05,949 - INFO - Device: cuda
+2025-10-21 10:15:05,950 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_rnn_20251021_101505\\checkpoints', 'results_dir': 'train_results\\train_run_rnn_20251021_101505\\results'}, 'data_params': {'window': 30, 'stride': 10, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 200, 'learning_rate': 0.0005, 'weight_decay': 3e-05, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 20, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-21 10:15:05,950 - INFO - ============================================================
+2025-10-21 10:15:05,950 - INFO - Loading data...
+2025-10-21 10:15:05,957 - INFO - Train: X(7425, 30, 10), y(7425,)
+2025-10-21 10:15:05,957 - INFO - Val:   X(1903, 30, 10), y(1903,)
+2025-10-21 10:15:05,958 - INFO - Test:  X(1415, 30, 10), y(1415,)
+2025-10-21 10:15:05,958 - INFO - Fitting StandardScaler on training data...
+2025-10-21 10:15:06,005 - INFO - Saved scaler to train_results\train_run_rnn_20251021_101505\checkpoints\scaler.json
+2025-10-21 10:15:06,006 - INFO - Applied y_transform: standardize
+2025-10-21 10:15:06,006 - INFO - Sequence length: 30, Features: 10
+2025-10-21 10:15:06,006 - INFO - Initializing RNN model...
+2025-10-21 10:15:06,810 - INFO - Model parameters: 59,395
+2025-10-21 10:15:06,811 - INFO - Starting training...
+2025-10-21 10:15:08,153 - INFO - Epoch 005 | Loss=0.0615 | Val MAE=116.5099 | lr=5.00e-04
+2025-10-21 10:15:09,058 - INFO - Epoch 010 | Loss=0.0505 | Val MAE=119.1700 | lr=2.50e-04
+2025-10-21 10:15:09,957 - INFO - Epoch 015 | Loss=0.0480 | Val MAE=122.1173 | lr=2.50e-04
+2025-10-21 10:15:10,843 - INFO - Epoch 020 | Loss=0.0434 | Val MAE=122.9687 | lr=1.25e-04
+2025-10-21 10:15:11,721 - INFO - Epoch 025 | Loss=0.0419 | Val MAE=130.4399 | lr=6.25e-05
+2025-10-21 10:15:12,627 - INFO - Epoch 030 | Loss=0.0407 | Val MAE=130.4210 | lr=3.13e-05
+2025-10-21 10:15:12,991 - INFO - Early stopping at epoch 32
+2025-10-21 10:15:12,991 - INFO - ============================================================
+2025-10-21 10:15:12,991 - INFO - Training completed!
+2025-10-21 10:15:12,991 - INFO - Model: RNN
+2025-10-21 10:15:12,991 - INFO - Best validation MAE: 112.1155
+2025-10-21 10:15:12,991 - INFO - Model saved to: train_results\train_run_rnn_20251021_101505\checkpoints\best_model.pth
+2025-10-21 10:15:12,991 - INFO - ============================================================
+2025-10-21 10:15:12,992 - INFO - Generating training curves...
+2025-10-21 10:15:13,364 - INFO - Training curves saved to results directory

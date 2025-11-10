@@ -1,0 +1,30 @@
+============================================================
+Battery RUL Prediction - Test Set Summary
+Model: RNN
+============================================================
+
+Test samples: 1375
+Unique batteries: 20
+
+Overall Performance:
+  MAE:  49.2611 cycles
+  RMSE: 76.6422 cycles
+  MAPE: 19.48%
+
+Prediction Interval (tau=0.8):
+  Coverage: 0.935
+  Conformal alpha: 40.6305
+
+Top 5 Batteries by MAE:
+  EL150800460647: MAE=109.29, MAPE=35.67%
+  EL150800460468: MAE=101.41, MAPE=21.69%
+  EL150800460477: MAE=87.05, MAPE=22.40%
+  EL150800460658: MAE=78.30, MAPE=25.25%
+  EL150800460636: MAE=61.55, MAPE=33.23%
+
+Top 5 Batteries by Accuracy:
+  el150800737233: MAE=8.66, MAPE=4.86%
+  el150800460596: MAE=10.83, MAPE=484287456.00%
+  el150800737368: MAE=12.98, MAPE=7.73%
+  el150800460527: MAE=14.64, MAPE=9.00%
+  el150800460614: MAE=16.64, MAPE=8.48%

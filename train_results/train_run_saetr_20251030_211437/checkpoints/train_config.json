@@ -1,0 +1,31 @@
+{
+  "model_name": "saetr",
+  "model_params": {
+    "sae_dim": 32,
+    "d_model": 128,
+    "nhead": 4,
+    "nlayers": 2,
+    "use_cnn": true,
+    "cnn_channels": 64,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "train_params": {
+    "batch_size": 128,
+    "epochs": 200,
+    "learning_rate": 0.0005,
+    "weight_decay": 3e-05,
+    "alpha_recon": 0.2,
+    "beta_sparse": 0.001,
+    "y_transform": "standardize",
+    "patience": 20,
+    "grad_clip": 1.0
+  },
+  "y_transform": "standardize",
+  "best_val_mae": 0.05927467346191406,
+  "y_mu": 466.79119873046875,
+  "y_sd": 367.93304444359376
+}

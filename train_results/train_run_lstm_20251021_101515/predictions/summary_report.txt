@@ -1,0 +1,30 @@
+============================================================
+Battery RUL Prediction - Test Set Summary
+Model: LSTM
+============================================================
+
+Test samples: 1415
+Unique batteries: 20
+
+Overall Performance:
+  MAE:  56.2805 cycles
+  RMSE: 89.8255 cycles
+  MAPE: 24.41%
+
+Prediction Interval (tau=0.8):
+  Coverage: 0.870
+  Conformal alpha: 20.2400
+
+Top 5 Batteries by MAE:
+  EL150800460468: MAE=126.30, MAPE=26.85%
+  EL150800460647: MAE=118.51, MAPE=39.62%
+  EL150800460477: MAE=93.71, MAPE=24.96%
+  EL150800460658: MAE=88.10, MAPE=26.79%
+  EL150800460636: MAE=63.60, MAPE=42.25%
+
+Top 5 Batteries by Accuracy:
+  el150800460596: MAE=12.04, MAPE=2229048320.00%
+  el150800737233: MAE=13.07, MAPE=6.62%
+  el150800460614: MAE=13.91, MAPE=10.98%
+  el150800460527: MAE=14.40, MAPE=10.36%
+  el150800737368: MAE=16.81, MAPE=11.19%

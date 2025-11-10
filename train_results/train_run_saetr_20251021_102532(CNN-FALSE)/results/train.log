@@ -1,0 +1,41 @@
+2025-10-21 10:25:32,864 - INFO - ============================================================
+2025-10-21 10:25:32,865 - INFO - Starting training: Model = SAETR
+2025-10-21 10:25:32,865 - INFO - Device: cuda
+2025-10-21 10:25:32,866 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_saetr_20251021_102532\\checkpoints', 'results_dir': 'train_results\\train_run_saetr_20251021_102532\\results'}, 'data_params': {'window': 30, 'stride': 10, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 200, 'learning_rate': 0.0005, 'weight_decay': 3e-05, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 20, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-21 10:25:32,867 - INFO - ============================================================
+2025-10-21 10:25:32,867 - INFO - Loading data...
+2025-10-21 10:25:32,891 - INFO - Train: X(7425, 30, 10), y(7425,)
+2025-10-21 10:25:32,891 - INFO - Val:   X(1903, 30, 10), y(1903,)
+2025-10-21 10:25:32,892 - INFO - Test:  X(1415, 30, 10), y(1415,)
+2025-10-21 10:25:32,892 - INFO - Fitting StandardScaler on training data...
+2025-10-21 10:25:32,941 - INFO - Saved scaler to train_results\train_run_saetr_20251021_102532\checkpoints\scaler.json
+2025-10-21 10:25:32,943 - INFO - Applied y_transform: standardize
+2025-10-21 10:25:32,953 - INFO - Sequence length: 30, Features: 10
+2025-10-21 10:25:32,953 - INFO - Initializing SAETR model...
+2025-10-21 10:25:34,526 - INFO - Model parameters: 295,565
+2025-10-21 10:25:34,526 - INFO - Starting training...
+2025-10-21 10:25:39,473 - INFO - Epoch 005 | Loss=0.0647 | Val MAE=121.9226 | lr=5.00e-04
+2025-10-21 10:25:41,734 - INFO - Epoch 010 | Loss=0.0503 | Val MAE=113.3884 | lr=5.00e-04
+2025-10-21 10:25:46,025 - INFO - Epoch 020 | Loss=0.0404 | Val MAE=105.6764 | lr=2.50e-04
+2025-10-21 10:25:48,233 - INFO - Epoch 025 | Loss=0.0366 | Val MAE=104.3353 | lr=2.50e-04
+2025-10-21 10:25:50,628 - INFO - Epoch 030 | Loss=0.0308 | Val MAE=98.1187 | lr=2.50e-04
+2025-10-21 10:25:52,825 - INFO - Epoch 035 | Loss=0.0301 | Val MAE=94.8506 | lr=2.50e-04
+2025-10-21 10:25:55,049 - INFO - Epoch 040 | Loss=0.0264 | Val MAE=78.6975 | lr=2.50e-04
+2025-10-21 10:25:57,265 - INFO - Epoch 045 | Loss=0.0252 | Val MAE=85.1207 | lr=2.50e-04
+2025-10-21 10:25:59,459 - INFO - Epoch 050 | Loss=0.0236 | Val MAE=71.3076 | lr=2.50e-04
+2025-10-21 10:26:01,663 - INFO - Epoch 055 | Loss=0.0212 | Val MAE=78.9240 | lr=2.50e-04
+2025-10-21 10:26:03,893 - INFO - Epoch 060 | Loss=0.0195 | Val MAE=67.3216 | lr=2.50e-04
+2025-10-21 10:26:06,113 - INFO - Epoch 065 | Loss=0.0180 | Val MAE=69.5537 | lr=2.50e-04
+2025-10-21 10:26:10,711 - INFO - Epoch 075 | Loss=0.0162 | Val MAE=61.8273 | lr=1.25e-04
+2025-10-21 10:26:13,175 - INFO - Epoch 080 | Loss=0.0139 | Val MAE=61.6950 | lr=6.25e-05
+2025-10-21 10:26:15,588 - INFO - Epoch 085 | Loss=0.0133 | Val MAE=60.1157 | lr=3.13e-05
+2025-10-21 10:26:18,033 - INFO - Epoch 090 | Loss=0.0128 | Val MAE=60.5257 | lr=1.56e-05
+2025-10-21 10:26:18,033 - INFO - Early stopping at epoch 90
+2025-10-21 10:26:18,034 - INFO - ============================================================
+2025-10-21 10:26:18,034 - INFO - Training completed!
+2025-10-21 10:26:18,034 - INFO - Model: SAETR
+2025-10-21 10:26:18,034 - INFO - Best validation MAE: 55.8223
+2025-10-21 10:26:18,034 - INFO - Model saved to: train_results\train_run_saetr_20251021_102532\checkpoints\best_model.pth
+2025-10-21 10:26:18,035 - INFO - ============================================================
+2025-10-21 10:26:18,035 - INFO - Generating training curves...
+2025-10-21 10:26:19,162 - INFO - Training curves saved to results directory

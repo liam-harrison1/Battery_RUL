@@ -1,0 +1,210 @@
+2025-10-13 00:04:42,590 - INFO - ============================================================
+2025-10-13 00:04:42,590 - INFO - Starting data preprocessing
+2025-10-13 00:04:42,591 - INFO - Input directory: data/final_dataset
+2025-10-13 00:04:42,591 - INFO - Output directory: data/processed
+2025-10-13 00:04:42,591 - INFO - ============================================================
+2025-10-13 00:04:42,591 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-13 00:04:42,736 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-13 00:04:42,772 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-13 00:04:42,808 - INFO - Train: 76552 rows, 94 batteries
+2025-10-13 00:04:42,809 - INFO - Val:   19543 rows, 20 batteries
+2025-10-13 00:04:42,810 - INFO - Test:  14823 rows, 21 batteries
+2025-10-13 00:04:42,810 - INFO - Number of features: 10
+2025-10-13 00:04:42,811 - INFO - Saved feature list to data/processed\features.json
+2025-10-13 00:04:42,811 - INFO - Sequence parameters: window=160, stride=2, min_cycles=180
+2025-10-13 00:04:42,812 - INFO - \nProcessing train set...
+2025-10-13 00:04:44,884 - INFO -   Sequences: X(30903, 160, 10), y(30903,)
+2025-10-13 00:04:44,884 - INFO -   Metadata: 30903 rows
+2025-10-13 00:04:44,886 - INFO -   Batteries included: 93
+2025-10-13 00:04:44,887 - INFO - \nProcessing val set...
+2025-10-13 00:04:45,440 - INFO -   Sequences: X(8185, 160, 10), y(8185,)
+2025-10-13 00:04:45,440 - INFO -   Metadata: 8185 rows
+2025-10-13 00:04:45,441 - INFO -   Batteries included: 20
+2025-10-13 00:04:45,441 - INFO - \nProcessing test set...
+2025-10-13 00:04:45,834 - INFO -   Sequences: X(5741, 160, 10), y(5741,)
+2025-10-13 00:04:45,834 - INFO -   Metadata: 5741 rows
+2025-10-13 00:04:45,834 - INFO -   Batteries included: 20
+2025-10-13 00:04:45,835 - INFO - ============================================================
+2025-10-13 00:04:45,835 - INFO - Preprocessing completed successfully!
+2025-10-13 00:04:45,835 - INFO - Output saved to: data/processed
+2025-10-13 00:04:45,835 - INFO - ============================================================
+2025-10-13 00:56:44,799 - INFO - ============================================================
+2025-10-13 00:56:44,799 - INFO - Starting data preprocessing
+2025-10-13 00:56:44,800 - INFO - Input directory: data/final_dataset
+2025-10-13 00:56:44,800 - INFO - Output directory: data/processed
+2025-10-13 00:56:44,800 - INFO - ============================================================
+2025-10-13 00:56:44,800 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-13 00:56:44,931 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-13 00:56:44,988 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-13 00:56:45,014 - INFO - Train: 76552 rows, 94 batteries
+2025-10-13 00:56:45,015 - INFO - Val:   19543 rows, 20 batteries
+2025-10-13 00:56:45,016 - INFO - Test:  14823 rows, 21 batteries
+2025-10-13 00:56:45,016 - INFO - Number of features: 10
+2025-10-13 00:56:45,017 - INFO - Saved feature list to data/processed\features.json
+2025-10-13 00:56:45,017 - INFO - Sequence parameters: window=160, stride=2, min_cycles=180
+2025-10-13 00:56:45,017 - INFO - \nProcessing train set...
+2025-10-13 00:56:46,669 - INFO -   Sequences: X(30903, 160, 10), y(30903,)
+2025-10-13 00:56:46,669 - INFO -   Metadata: 30903 rows
+2025-10-13 00:56:46,669 - INFO -   Batteries included: 93
+2025-10-13 00:56:46,669 - INFO - \nProcessing val set...
+2025-10-13 00:56:47,064 - INFO -   Sequences: X(8185, 160, 10), y(8185,)
+2025-10-13 00:56:47,064 - INFO -   Metadata: 8185 rows
+2025-10-13 00:56:47,064 - INFO -   Batteries included: 20
+2025-10-13 00:56:47,064 - INFO - \nProcessing test set...
+2025-10-13 00:56:47,314 - INFO -   Sequences: X(5741, 160, 10), y(5741,)
+2025-10-13 00:56:47,314 - INFO -   Metadata: 5741 rows
+2025-10-13 00:56:47,314 - INFO -   Batteries included: 20
+2025-10-13 00:56:47,314 - INFO - ============================================================
+2025-10-13 00:56:47,314 - INFO - Preprocessing completed successfully!
+2025-10-13 00:56:47,314 - INFO - Output saved to: data/processed
+2025-10-13 00:56:47,315 - INFO - ============================================================
+2025-10-16 20:44:29,708 - INFO - ============================================================
+2025-10-16 20:44:29,709 - INFO - Starting data preprocessing
+2025-10-16 20:44:29,709 - INFO - Input directory: data/final_dataset
+2025-10-16 20:44:29,709 - INFO - Output directory: data/processed
+2025-10-16 20:44:29,709 - INFO - ============================================================
+2025-10-16 20:44:29,709 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-16 20:44:29,879 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-16 20:44:29,918 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-16 20:44:30,009 - INFO - Train: 76552 rows, 94 batteries
+2025-10-16 20:44:30,009 - INFO - Val:   19543 rows, 20 batteries
+2025-10-16 20:44:30,010 - INFO - Test:  14823 rows, 21 batteries
+2025-10-16 20:44:30,010 - INFO - Number of features: 10
+2025-10-16 20:44:30,010 - INFO - Saved feature list to data/processed\features.json
+2025-10-16 20:44:30,010 - INFO - Sequence parameters: window=30, stride=30, min_cycles=180
+2025-10-16 20:44:30,011 - INFO - \nProcessing train set...
+2025-10-16 20:44:30,081 - INFO -   Sequences: X(2510, 30, 10), y(2510,)
+2025-10-16 20:44:30,082 - INFO -   Metadata: 2510 rows
+2025-10-16 20:44:30,082 - INFO -   Batteries included: 93
+2025-10-16 20:44:30,082 - INFO - \nProcessing val set...
+2025-10-16 20:44:30,098 - INFO -   Sequences: X(641, 30, 10), y(641,)
+2025-10-16 20:44:30,099 - INFO -   Metadata: 641 rows
+2025-10-16 20:44:30,099 - INFO -   Batteries included: 20
+2025-10-16 20:44:30,099 - INFO - \nProcessing test set...
+2025-10-16 20:44:30,114 - INFO -   Sequences: X(478, 30, 10), y(478,)
+2025-10-16 20:44:30,114 - INFO -   Metadata: 478 rows
+2025-10-16 20:44:30,114 - INFO -   Batteries included: 20
+2025-10-16 20:44:30,115 - INFO - ============================================================
+2025-10-16 20:44:30,115 - INFO - Preprocessing completed successfully!
+2025-10-16 20:44:30,115 - INFO - Output saved to: data/processed
+2025-10-16 20:44:30,115 - INFO - ============================================================
+2025-10-16 20:46:20,814 - INFO - ============================================================
+2025-10-16 20:46:20,821 - INFO - Starting data preprocessing
+2025-10-16 20:46:20,821 - INFO - Input directory: data/final_dataset
+2025-10-16 20:46:20,822 - INFO - Output directory: data/processed
+2025-10-16 20:46:20,822 - INFO - ============================================================
+2025-10-16 20:46:20,822 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-16 20:46:20,933 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-16 20:46:20,969 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-16 20:46:20,995 - INFO - Train: 76552 rows, 94 batteries
+2025-10-16 20:46:20,995 - INFO - Val:   19543 rows, 20 batteries
+2025-10-16 20:46:20,996 - INFO - Test:  14823 rows, 21 batteries
+2025-10-16 20:46:20,996 - INFO - Number of features: 10
+2025-10-16 20:46:20,997 - INFO - Saved feature list to data/processed\features.json
+2025-10-16 20:46:20,997 - INFO - Sequence parameters: window=50, stride=50, min_cycles=180
+2025-10-16 20:46:20,997 - INFO - \nProcessing train set...
+2025-10-16 20:46:21,084 - INFO -   Sequences: X(1482, 50, 10), y(1482,)
+2025-10-16 20:46:21,084 - INFO -   Metadata: 1482 rows
+2025-10-16 20:46:21,085 - INFO -   Batteries included: 93
+2025-10-16 20:46:21,085 - INFO - \nProcessing val set...
+2025-10-16 20:46:21,123 - INFO -   Sequences: X(381, 50, 10), y(381,)
+2025-10-16 20:46:21,124 - INFO -   Metadata: 381 rows
+2025-10-16 20:46:21,125 - INFO -   Batteries included: 20
+2025-10-16 20:46:21,125 - INFO - \nProcessing test set...
+2025-10-16 20:46:21,141 - INFO -   Sequences: X(285, 50, 10), y(285,)
+2025-10-16 20:46:21,141 - INFO -   Metadata: 285 rows
+2025-10-16 20:46:21,142 - INFO -   Batteries included: 20
+2025-10-16 20:46:21,142 - INFO - ============================================================
+2025-10-16 20:46:21,142 - INFO - Preprocessing completed successfully!
+2025-10-16 20:46:21,142 - INFO - Output saved to: data/processed
+2025-10-16 20:46:21,142 - INFO - ============================================================
+2025-10-21 09:19:39,100 - INFO - ============================================================
+2025-10-21 09:19:39,108 - INFO - Starting data preprocessing
+2025-10-21 09:19:39,108 - INFO - Input directory: data/final_dataset
+2025-10-21 09:19:39,108 - INFO - Output directory: data/processed
+2025-10-21 09:19:39,108 - INFO - ============================================================
+2025-10-21 09:19:39,108 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-21 09:19:39,217 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-21 09:19:39,279 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-21 09:19:39,335 - INFO - Train: 76552 rows, 94 batteries
+2025-10-21 09:19:39,336 - INFO - Val:   19543 rows, 20 batteries
+2025-10-21 09:19:39,336 - INFO - Test:  14823 rows, 21 batteries
+2025-10-21 09:19:39,336 - INFO - Number of features: 10
+2025-10-21 09:19:39,337 - INFO - Saved feature list to data/processed\features.json
+2025-10-21 09:19:39,337 - INFO - Sequence parameters: window=30, stride=10, min_cycles=180
+2025-10-21 09:19:39,337 - INFO - \nProcessing train set...
+2025-10-21 09:19:39,452 - INFO -   Sequences: X(7425, 30, 10), y(7425,)
+2025-10-21 09:19:39,452 - INFO -   Metadata: 7425 rows
+2025-10-21 09:19:39,453 - INFO -   Batteries included: 93
+2025-10-21 09:19:39,453 - INFO - \nProcessing val set...
+2025-10-21 09:19:39,497 - INFO -   Sequences: X(1903, 30, 10), y(1903,)
+2025-10-21 09:19:39,497 - INFO -   Metadata: 1903 rows
+2025-10-21 09:19:39,498 - INFO -   Batteries included: 20
+2025-10-21 09:19:39,498 - INFO - \nProcessing test set...
+2025-10-21 09:19:39,547 - INFO -   Sequences: X(1415, 30, 10), y(1415,)
+2025-10-21 09:19:39,547 - INFO -   Metadata: 1415 rows
+2025-10-21 09:19:39,548 - INFO -   Batteries included: 20
+2025-10-21 09:19:39,548 - INFO - ============================================================
+2025-10-21 09:19:39,548 - INFO - Preprocessing completed successfully!
+2025-10-21 09:19:39,548 - INFO - Output saved to: data/processed
+2025-10-21 09:19:39,548 - INFO - ============================================================
+2025-10-30 20:40:01,597 - INFO - ============================================================
+2025-10-30 20:40:01,604 - INFO - Starting data preprocessing
+2025-10-30 20:40:01,604 - INFO - Input directory: data/final_dataset
+2025-10-30 20:40:01,604 - INFO - Output directory: data/processed
+2025-10-30 20:40:01,605 - INFO - ============================================================
+2025-10-30 20:40:01,605 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-30 20:40:01,733 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-30 20:40:01,806 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-30 20:40:01,884 - INFO - Train: 76552 rows, 94 batteries
+2025-10-30 20:40:01,885 - INFO - Val:   19543 rows, 20 batteries
+2025-10-30 20:40:01,886 - INFO - Test:  14823 rows, 21 batteries
+2025-10-30 20:40:01,886 - INFO - Number of features: 10
+2025-10-30 20:40:01,887 - INFO - Saved feature list to data/processed\features.json
+2025-10-30 20:40:01,887 - INFO - Sequence parameters: window=50, stride=10, min_cycles=180
+2025-10-30 20:40:01,887 - INFO - \nProcessing train set...
+2025-10-30 20:40:02,060 - INFO -   Sequences: X(7239, 50, 10), y(7239,)
+2025-10-30 20:40:02,060 - INFO -   Metadata: 7239 rows
+2025-10-30 20:40:02,061 - INFO -   Batteries included: 93
+2025-10-30 20:40:02,061 - INFO - \nProcessing val set...
+2025-10-30 20:40:02,102 - INFO -   Sequences: X(1863, 50, 10), y(1863,)
+2025-10-30 20:40:02,102 - INFO -   Metadata: 1863 rows
+2025-10-30 20:40:02,103 - INFO -   Batteries included: 20
+2025-10-30 20:40:02,103 - INFO - \nProcessing test set...
+2025-10-30 20:40:02,137 - INFO -   Sequences: X(1375, 50, 10), y(1375,)
+2025-10-30 20:40:02,138 - INFO -   Metadata: 1375 rows
+2025-10-30 20:40:02,138 - INFO -   Batteries included: 20
+2025-10-30 20:40:02,138 - INFO - ============================================================
+2025-10-30 20:40:02,139 - INFO - Preprocessing completed successfully!
+2025-10-30 20:40:02,139 - INFO - Output saved to: data/processed
+2025-10-30 20:40:02,139 - INFO - ============================================================
+2025-10-30 21:14:27,181 - INFO - ============================================================
+2025-10-30 21:14:27,181 - INFO - Starting data preprocessing
+2025-10-30 21:14:27,181 - INFO - Input directory: data/final_dataset
+2025-10-30 21:14:27,182 - INFO - Output directory: data/processed
+2025-10-30 21:14:27,182 - INFO - ============================================================
+2025-10-30 21:14:27,182 - INFO - Loading data/final_dataset\tabular_train.csv...
+2025-10-30 21:14:27,288 - INFO - Loading data/final_dataset\tabular_val.csv...
+2025-10-30 21:14:27,316 - INFO - Loading data/final_dataset\tabular_test.csv...
+2025-10-30 21:14:27,341 - INFO - Train: 76552 rows, 94 batteries
+2025-10-30 21:14:27,342 - INFO - Val:   19543 rows, 20 batteries
+2025-10-30 21:14:27,343 - INFO - Test:  14823 rows, 21 batteries
+2025-10-30 21:14:27,343 - INFO - Number of features: 10
+2025-10-30 21:14:27,343 - INFO - Saved feature list to data/processed\features.json
+2025-10-30 21:14:27,343 - INFO - Sequence parameters: window=60, stride=10, min_cycles=180
+2025-10-30 21:14:27,343 - INFO - \nProcessing train set...
+2025-10-30 21:14:27,534 - INFO -   Sequences: X(7146, 60, 10), y(7146,)
+2025-10-30 21:14:27,535 - INFO -   Metadata: 7146 rows
+2025-10-30 21:14:27,535 - INFO -   Batteries included: 93
+2025-10-30 21:14:27,536 - INFO - \nProcessing val set...
+2025-10-30 21:14:27,590 - INFO -   Sequences: X(1843, 60, 10), y(1843,)
+2025-10-30 21:14:27,590 - INFO -   Metadata: 1843 rows
+2025-10-30 21:14:27,590 - INFO -   Batteries included: 20
+2025-10-30 21:14:27,590 - INFO - \nProcessing test set...
+2025-10-30 21:14:27,626 - INFO -   Sequences: X(1355, 60, 10), y(1355,)
+2025-10-30 21:14:27,627 - INFO -   Metadata: 1355 rows
+2025-10-30 21:14:27,627 - INFO -   Batteries included: 20
+2025-10-30 21:14:27,627 - INFO - ============================================================
+2025-10-30 21:14:27,627 - INFO - Preprocessing completed successfully!
+2025-10-30 21:14:27,627 - INFO - Output saved to: data/processed
+2025-10-30 21:14:27,628 - INFO - ============================================================

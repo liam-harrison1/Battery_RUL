@@ -1,0 +1,33 @@
+2025-10-30 20:52:21,645 - INFO - 使用实验记录 [ID:4] rnn (MAE=106.1061)
+2025-10-30 20:52:21,646 - INFO - ============================================================
+2025-10-30 20:52:21,646 - INFO - Starting prediction on test set
+2025-10-30 20:52:21,646 - INFO - Device: cuda
+2025-10-30 20:52:21,646 - INFO - Run directory: H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139
+2025-10-30 20:52:21,646 - INFO - ============================================================
+2025-10-30 20:52:21,652 - INFO - Model type: RNN
+2025-10-30 20:52:21,652 - INFO - Target transform mode: standardize
+2025-10-30 20:52:21,652 - INFO - Loading scaler...
+2025-10-30 20:52:21,652 - INFO - Loading sequences...
+2025-10-30 20:52:21,663 - INFO - Test set: X(1375, 50, 10), y(1375,), meta=1375 rows
+2025-10-30 20:52:21,678 - INFO - Loading RNN model...
+2025-10-30 20:52:21,750 - INFO - Loaded model from epoch 13 with val MAE=106.1061
+2025-10-30 20:52:21,750 - INFO - Performing conformal calibration on validation set...
+2025-10-30 20:52:21,801 - INFO - Conformal alpha (tau=0.8): 40.6305
+2025-10-30 20:52:21,802 - INFO - Predicting on test set...
+2025-10-30 20:52:21,805 - INFO - ============================================================
+2025-10-30 20:52:21,806 - INFO - Test Set Performance (RNN):
+2025-10-30 20:52:21,806 - INFO -   MAE:  49.2611
+2025-10-30 20:52:21,806 - INFO -   RMSE: 76.6422
+2025-10-30 20:52:21,806 - INFO -   MAPE: 19.48%
+2025-10-30 20:52:21,806 - INFO - ============================================================
+2025-10-30 20:52:22,038 - INFO - Saved scatter plot to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139\predictions\test_scatter_pred_vs_true.png
+2025-10-30 20:52:22,170 - INFO - Prediction interval coverage: 0.935
+2025-10-30 20:52:22,171 - INFO - Saved coverage plot to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139\predictions\quantile_coverage.png
+2025-10-30 20:52:22,178 - INFO - Saved detailed predictions to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139\predictions\predictions_test.csv
+2025-10-30 20:52:22,182 - INFO - Saved per-battery statistics to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139\predictions\battery_statistics.csv
+2025-10-30 20:52:22,182 - INFO - Generating per-battery prediction curves...
+2025-10-30 20:52:23,943 - INFO - Saved 20 battery curves to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139\predictions\per_battery_traces
+2025-10-30 20:52:23,946 - INFO - Saved summary report to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_rnn_20251030_205139\predictions\summary_report.txt
+2025-10-30 20:52:23,946 - INFO - ============================================================
+2025-10-30 20:52:23,947 - INFO - Prediction completed successfully!
+2025-10-30 20:52:23,947 - INFO - ============================================================

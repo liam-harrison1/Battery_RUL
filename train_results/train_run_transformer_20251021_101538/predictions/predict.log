@@ -1,0 +1,32 @@
+2025-10-21 10:18:55,661 - INFO - ============================================================
+2025-10-21 10:18:55,662 - INFO - Starting prediction on test set
+2025-10-21 10:18:55,662 - INFO - Device: cuda
+2025-10-21 10:18:55,662 - INFO - Run directory: H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538
+2025-10-21 10:18:55,662 - INFO - ============================================================
+2025-10-21 10:18:55,675 - INFO - Model type: TRANSFORMER
+2025-10-21 10:18:55,675 - INFO - Target transform mode: standardize
+2025-10-21 10:18:55,675 - INFO - Loading scaler...
+2025-10-21 10:18:55,676 - INFO - Loading sequences...
+2025-10-21 10:18:55,684 - INFO - Test set: X(1415, 30, 10), y(1415,), meta=1415 rows
+2025-10-21 10:18:55,696 - INFO - Loading TRANSFORMER model...
+2025-10-21 10:18:55,780 - INFO - Loaded model from epoch 27 with val MAE=41.9848
+2025-10-21 10:18:55,780 - INFO - Performing conformal calibration on validation set...
+2025-10-21 10:18:55,842 - INFO - Conformal alpha (tau=0.8): 7.2601
+2025-10-21 10:18:55,843 - INFO - Predicting on test set...
+2025-10-21 10:18:55,853 - INFO - ============================================================
+2025-10-21 10:18:55,853 - INFO - Test Set Performance (TRANSFORMER):
+2025-10-21 10:18:55,853 - INFO -   MAE:  9.8267
+2025-10-21 10:18:55,853 - INFO -   RMSE: 13.1148
+2025-10-21 10:18:55,854 - INFO -   MAPE: 9.24%
+2025-10-21 10:18:55,855 - INFO - ============================================================
+2025-10-21 10:18:56,111 - INFO - Saved scatter plot to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538\predictions\test_scatter_pred_vs_true.png
+2025-10-21 10:18:56,257 - INFO - Prediction interval coverage: 0.985
+2025-10-21 10:18:56,258 - INFO - Saved coverage plot to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538\predictions\quantile_coverage.png
+2025-10-21 10:18:56,271 - INFO - Saved detailed predictions to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538\predictions\predictions_test.csv
+2025-10-21 10:18:56,281 - INFO - Saved per-battery statistics to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538\predictions\battery_statistics.csv
+2025-10-21 10:18:56,282 - INFO - Generating per-battery prediction curves...
+2025-10-21 10:18:58,261 - INFO - Saved 20 battery curves to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538\predictions\per_battery_traces
+2025-10-21 10:18:58,264 - INFO - Saved summary report to H:\ø∆—–\ Ÿ√¸‘§≤‚\SAT\SAT_proj1\train_results\train_run_transformer_20251021_101538\predictions\summary_report.txt
+2025-10-21 10:18:58,264 - INFO - ============================================================
+2025-10-21 10:18:58,264 - INFO - Prediction completed successfully!
+2025-10-21 10:18:58,265 - INFO - ============================================================

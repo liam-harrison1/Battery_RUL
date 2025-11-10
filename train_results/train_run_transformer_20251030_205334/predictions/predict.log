@@ -1,0 +1,33 @@
+2025-10-30 20:54:15,666 - INFO - 使用实验记录 [ID:6] transformer (MAE=34.5122)
+2025-10-30 20:54:15,666 - INFO - ============================================================
+2025-10-30 20:54:15,667 - INFO - Starting prediction on test set
+2025-10-30 20:54:15,667 - INFO - Device: cuda
+2025-10-30 20:54:15,667 - INFO - Run directory: H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334
+2025-10-30 20:54:15,667 - INFO - ============================================================
+2025-10-30 20:54:15,687 - INFO - Model type: TRANSFORMER
+2025-10-30 20:54:15,687 - INFO - Target transform mode: standardize
+2025-10-30 20:54:15,687 - INFO - Loading scaler...
+2025-10-30 20:54:15,690 - INFO - Loading sequences...
+2025-10-30 20:54:15,708 - INFO - Test set: X(1375, 50, 10), y(1375,), meta=1375 rows
+2025-10-30 20:54:15,718 - INFO - Loading TRANSFORMER model...
+2025-10-30 20:54:15,802 - INFO - Loaded model from epoch 62 with val MAE=34.5122
+2025-10-30 20:54:15,803 - INFO - Performing conformal calibration on validation set...
+2025-10-30 20:54:15,872 - INFO - Conformal alpha (tau=0.8): 1.0368
+2025-10-30 20:54:15,872 - INFO - Predicting on test set...
+2025-10-30 20:54:15,888 - INFO - ============================================================
+2025-10-30 20:54:15,888 - INFO - Test Set Performance (TRANSFORMER):
+2025-10-30 20:54:15,888 - INFO -   MAE:  3.9485
+2025-10-30 20:54:15,889 - INFO -   RMSE: 5.3359
+2025-10-30 20:54:15,889 - INFO -   MAPE: 3.37%
+2025-10-30 20:54:15,889 - INFO - ============================================================
+2025-10-30 20:54:16,143 - INFO - Saved scatter plot to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334\predictions\test_scatter_pred_vs_true.png
+2025-10-30 20:54:16,285 - INFO - Prediction interval coverage: 0.975
+2025-10-30 20:54:16,285 - INFO - Saved coverage plot to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334\predictions\quantile_coverage.png
+2025-10-30 20:54:16,293 - INFO - Saved detailed predictions to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334\predictions\predictions_test.csv
+2025-10-30 20:54:16,299 - INFO - Saved per-battery statistics to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334\predictions\battery_statistics.csv
+2025-10-30 20:54:16,299 - INFO - Generating per-battery prediction curves...
+2025-10-30 20:54:18,220 - INFO - Saved 20 battery curves to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334\predictions\per_battery_traces
+2025-10-30 20:54:18,223 - INFO - Saved summary report to H:\科研\寿命预测\SAT\SAT_proj1\train_results\train_run_transformer_20251030_205334\predictions\summary_report.txt
+2025-10-30 20:54:18,223 - INFO - ============================================================
+2025-10-30 20:54:18,223 - INFO - Prediction completed successfully!
+2025-10-30 20:54:18,225 - INFO - ============================================================

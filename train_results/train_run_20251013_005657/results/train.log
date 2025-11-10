@@ -1,0 +1,33 @@
+2025-10-13 00:56:57,930 - INFO - ============================================================
+2025-10-13 00:56:57,930 - INFO - Starting training with configuration:
+2025-10-13 00:56:57,930 - INFO - Device: cuda
+2025-10-13 00:56:57,930 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_20251013_005657\\checkpoints', 'results_dir': 'train_results\\train_run_20251013_005657\\results'}, 'data_params': {'window': 160, 'stride': 2, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 150, 'learning_rate': 0.0003, 'weight_decay': 0.0001, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 15, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}}
+2025-10-13 00:56:57,930 - INFO - ============================================================
+2025-10-13 00:56:57,931 - INFO - Loading data...
+2025-10-13 00:57:06,343 - INFO - Train: X(30903, 160, 10), y(30903,)
+2025-10-13 00:57:06,343 - INFO - Val:   X(8185, 160, 10), y(8185,)
+2025-10-13 00:57:06,343 - INFO - Test:  X(5741, 160, 10), y(5741,)
+2025-10-13 00:57:06,344 - INFO - Fitting StandardScaler on training data...
+2025-10-13 00:57:07,234 - INFO - Saved scaler to train_results\train_run_20251013_005657\checkpoints\scaler.json
+2025-10-13 00:57:07,236 - INFO - Applied y_transform: standardize
+2025-10-13 00:57:07,245 - INFO - Sequence length: 160, Features: 10
+2025-10-13 00:57:07,245 - INFO - Initializing model...
+2025-10-13 00:57:08,453 - INFO - Model parameters: 295,565
+2025-10-13 00:57:08,454 - INFO - Starting training...
+2025-10-13 00:58:51,481 - INFO - Epoch 015 | Loss=0.0090 | Val MAE=23.8656 | lr=3.00e-04
+2025-10-13 01:01:15,017 - INFO - Epoch 025 | Loss=0.0067 | Val MAE=20.5556 | lr=3.00e-04
+2025-10-13 01:02:27,232 - INFO - Epoch 030 | Loss=0.0067 | Val MAE=16.8678 | lr=3.00e-04
+2025-10-13 01:03:39,019 - INFO - Epoch 035 | Loss=0.0061 | Val MAE=17.8012 | lr=3.00e-04
+2025-10-13 01:06:00,048 - INFO - Epoch 045 | Loss=0.0043 | Val MAE=15.0882 | lr=1.50e-04
+2025-10-13 01:07:06,071 - INFO - Epoch 050 | Loss=0.0043 | Val MAE=16.4709 | lr=7.50e-05
+2025-10-13 01:09:24,474 - INFO - Epoch 060 | Loss=0.0035 | Val MAE=15.2859 | lr=7.50e-05
+2025-10-13 01:10:36,278 - INFO - Epoch 065 | Loss=0.0031 | Val MAE=15.0029 | lr=3.75e-05
+2025-10-13 01:11:48,134 - INFO - Epoch 070 | Loss=0.0030 | Val MAE=14.4720 | lr=1.87e-05
+2025-10-13 01:12:17,020 - INFO - Early stopping at epoch 72
+2025-10-13 01:12:17,023 - INFO - ============================================================
+2025-10-13 01:12:17,024 - INFO - Training completed!
+2025-10-13 01:12:17,026 - INFO - Best validation MAE: 14.3460
+2025-10-13 01:12:17,027 - INFO - Model saved to: train_results\train_run_20251013_005657\checkpoints\best_model.pth
+2025-10-13 01:12:17,028 - INFO - ============================================================
+2025-10-13 01:12:17,028 - INFO - Generating training curves...
+2025-10-13 01:12:19,708 - INFO - Training curves saved to results directory

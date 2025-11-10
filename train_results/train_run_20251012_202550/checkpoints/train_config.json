@@ -1,0 +1,30 @@
+{
+  "model_params": {
+    "sae_dim": 32,
+    "d_model": 128,
+    "nhead": 4,
+    "nlayers": 2,
+    "use_cnn": true,
+    "cnn_channels": 64,
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "train_params": {
+    "batch_size": 128,
+    "epochs": 150,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "alpha_recon": 0.2,
+    "beta_sparse": 0.001,
+    "y_transform": "standardize",
+    "patience": 15,
+    "grad_clip": 1.0
+  },
+  "y_transform": "standardize",
+  "best_val_mae": 5.160867691040039,
+  "y_mu": 427.6427001953125,
+  "y_sd": 353.9169921975
+}

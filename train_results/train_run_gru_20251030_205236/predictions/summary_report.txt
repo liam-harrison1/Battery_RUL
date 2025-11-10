@@ -1,0 +1,30 @@
+============================================================
+Battery RUL Prediction - Test Set Summary
+Model: GRU
+============================================================
+
+Test samples: 1375
+Unique batteries: 20
+
+Overall Performance:
+  MAE:  11.3282 cycles
+  RMSE: 15.9224 cycles
+  MAPE: 5.55%
+
+Prediction Interval (tau=0.8):
+  Coverage: 1.000
+  Conformal alpha: 89.9269
+
+Top 5 Batteries by MAE:
+  EL150800460468: MAE=27.14, MAPE=8.80%
+  EL150800460647: MAE=23.71, MAPE=8.11%
+  el150800460492: MAE=15.34, MAPE=9.91%
+  EL150800460477: MAE=14.23, MAPE=6.53%
+  el150800737368: MAE=13.24, MAPE=4.58%
+
+Top 5 Batteries by Accuracy:
+  el150800460527: MAE=2.10, MAPE=2.07%
+  el150800460614: MAE=2.58, MAPE=2.98%
+  el150800460510: MAE=3.68, MAPE=2.64%
+  el150800737233: MAE=3.82, MAPE=3.24%
+  el150800460596: MAE=3.94, MAPE=281663968.00%

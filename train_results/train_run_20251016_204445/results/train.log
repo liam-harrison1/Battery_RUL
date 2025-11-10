@@ -1,0 +1,28 @@
+2025-10-16 20:44:45,960 - INFO - ============================================================
+2025-10-16 20:44:45,961 - INFO - Starting training with configuration:
+2025-10-16 20:44:45,961 - INFO - Device: cuda
+2025-10-16 20:44:45,963 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_20251016_204445\\checkpoints', 'results_dir': 'train_results\\train_run_20251016_204445\\results'}, 'data_params': {'window': 30, 'stride': 30, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 150, 'learning_rate': 0.0003, 'weight_decay': 0.0001, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 15, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-16 20:44:45,963 - INFO - ============================================================
+2025-10-16 20:44:45,964 - INFO - Loading data...
+2025-10-16 20:44:47,435 - INFO - Train: X(2510, 30, 10), y(2510,)
+2025-10-16 20:44:47,435 - INFO - Val:   X(641, 30, 10), y(641,)
+2025-10-16 20:44:47,435 - INFO - Test:  X(478, 30, 10), y(478,)
+2025-10-16 20:44:47,435 - INFO - Fitting StandardScaler on training data...
+2025-10-16 20:44:47,452 - INFO - Saved scaler to train_results\train_run_20251016_204445\checkpoints\scaler.json
+2025-10-16 20:44:47,454 - INFO - Applied y_transform: standardize
+2025-10-16 20:44:47,463 - INFO - Sequence length: 30, Features: 10
+2025-10-16 20:44:47,464 - INFO - Initializing model...
+2025-10-16 20:44:48,820 - INFO - Model parameters: 295,565
+2025-10-16 20:44:48,821 - INFO - Starting training...
+2025-10-16 20:44:52,595 - INFO - Epoch 015 | Loss=0.0755 | Val MAE=125.9182 | lr=3.00e-04
+2025-10-16 20:44:53,370 - INFO - Epoch 020 | Loss=0.0667 | Val MAE=123.3855 | lr=3.00e-04
+2025-10-16 20:44:54,120 - INFO - Epoch 025 | Loss=0.0606 | Val MAE=124.3712 | lr=1.50e-04
+2025-10-16 20:44:54,861 - INFO - Epoch 030 | Loss=0.0571 | Val MAE=123.5330 | lr=7.50e-05
+2025-10-16 20:44:55,162 - INFO - Early stopping at epoch 32
+2025-10-16 20:44:55,163 - INFO - ============================================================
+2025-10-16 20:44:55,163 - INFO - Training completed!
+2025-10-16 20:44:55,163 - INFO - Best validation MAE: 120.6786
+2025-10-16 20:44:55,163 - INFO - Model saved to: train_results\train_run_20251016_204445\checkpoints\best_model.pth
+2025-10-16 20:44:55,164 - INFO - ============================================================
+2025-10-16 20:44:55,164 - INFO - Generating training curves...
+2025-10-16 20:44:56,190 - INFO - Training curves saved to results directory

@@ -1,0 +1,32 @@
+2025-10-30 20:50:38,753 - INFO - ============================================================
+2025-10-30 20:50:38,753 - INFO - Starting training: Model = LSTM
+2025-10-30 20:50:38,753 - INFO - Device: cuda
+2025-10-30 20:50:38,753 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_lstm_20251030_205038\\checkpoints', 'results_dir': 'train_results\\train_run_lstm_20251030_205038\\results'}, 'data_params': {'window': 50, 'stride': 10, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 200, 'learning_rate': 0.0005, 'weight_decay': 3e-05, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 20, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-30 20:50:38,753 - INFO - ============================================================
+2025-10-30 20:50:38,753 - INFO - Loading data...
+2025-10-30 20:50:38,763 - INFO - Train: X(7239, 50, 10), y(7239,)
+2025-10-30 20:50:38,763 - INFO - Val:   X(1863, 50, 10), y(1863,)
+2025-10-30 20:50:38,763 - INFO - Test:  X(1375, 50, 10), y(1375,)
+2025-10-30 20:50:38,764 - INFO - Fitting StandardScaler on training data...
+2025-10-30 20:50:38,832 - INFO - Saved scaler to train_results\train_run_lstm_20251030_205038\checkpoints\scaler.json
+2025-10-30 20:50:38,833 - INFO - Applied y_transform: standardize
+2025-10-30 20:50:38,833 - INFO - Sequence length: 50, Features: 10
+2025-10-30 20:50:38,833 - INFO - Initializing LSTM model...
+2025-10-30 20:50:39,673 - INFO - Model parameters: 212,227
+2025-10-30 20:50:39,674 - INFO - Starting training...
+2025-10-30 20:50:41,651 - INFO - Epoch 005 | Loss=0.0553 | Val MAE=121.8267 | lr=5.00e-04
+2025-10-30 20:50:43,274 - INFO - Epoch 010 | Loss=0.0475 | Val MAE=116.6883 | lr=2.50e-04
+2025-10-30 20:50:44,937 - INFO - Epoch 015 | Loss=0.0439 | Val MAE=118.7196 | lr=2.50e-04
+2025-10-30 20:50:46,591 - INFO - Epoch 020 | Loss=0.0410 | Val MAE=115.8272 | lr=1.25e-04
+2025-10-30 20:50:48,262 - INFO - Epoch 025 | Loss=0.0379 | Val MAE=118.0604 | lr=1.25e-04
+2025-10-30 20:50:50,016 - INFO - Epoch 030 | Loss=0.0360 | Val MAE=118.4449 | lr=6.25e-05
+2025-10-30 20:50:51,412 - INFO - Early stopping at epoch 34
+2025-10-30 20:50:51,419 - INFO - ============================================================
+2025-10-30 20:50:51,419 - INFO - Training completed!
+2025-10-30 20:50:51,419 - INFO - Model: LSTM
+2025-10-30 20:50:51,419 - INFO - Best validation MAE: 110.0158
+2025-10-30 20:50:51,419 - INFO - Model saved to: train_results\train_run_lstm_20251030_205038\checkpoints\best_model.pth
+2025-10-30 20:50:51,419 - INFO - ============================================================
+2025-10-30 20:50:51,420 - INFO - Experiment recorded with ID: 3
+2025-10-30 20:50:51,420 - INFO - Generating training curves...
+2025-10-30 20:50:51,851 - INFO - Training curves saved to results directory

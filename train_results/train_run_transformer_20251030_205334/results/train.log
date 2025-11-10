@@ -1,0 +1,38 @@
+2025-10-30 20:53:34,425 - INFO - ============================================================
+2025-10-30 20:53:34,425 - INFO - Starting training: Model = TRANSFORMER
+2025-10-30 20:53:34,426 - INFO - Device: cuda
+2025-10-30 20:53:34,426 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_transformer_20251030_205334\\checkpoints', 'results_dir': 'train_results\\train_run_transformer_20251030_205334\\results'}, 'data_params': {'window': 50, 'stride': 10, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 200, 'learning_rate': 0.0005, 'weight_decay': 3e-05, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 20, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-30 20:53:34,426 - INFO - ============================================================
+2025-10-30 20:53:34,426 - INFO - Loading data...
+2025-10-30 20:53:34,434 - INFO - Train: X(7239, 50, 10), y(7239,)
+2025-10-30 20:53:34,434 - INFO - Val:   X(1863, 50, 10), y(1863,)
+2025-10-30 20:53:34,434 - INFO - Test:  X(1375, 50, 10), y(1375,)
+2025-10-30 20:53:34,434 - INFO - Fitting StandardScaler on training data...
+2025-10-30 20:53:34,495 - INFO - Saved scaler to train_results\train_run_transformer_20251030_205334\checkpoints\scaler.json
+2025-10-30 20:53:34,496 - INFO - Applied y_transform: standardize
+2025-10-30 20:53:34,496 - INFO - Sequence length: 50, Features: 10
+2025-10-30 20:53:34,496 - INFO - Initializing TRANSFORMER model...
+2025-10-30 20:53:35,262 - INFO - Model parameters: 274,819
+2025-10-30 20:53:35,269 - INFO - Starting training...
+2025-10-30 20:53:46,388 - INFO - Epoch 025 | Loss=0.0166 | Val MAE=44.8683 | lr=5.00e-04
+2025-10-30 20:53:49,058 - INFO - Epoch 030 | Loss=0.0140 | Val MAE=42.9909 | lr=5.00e-04
+2025-10-30 20:53:51,499 - INFO - Epoch 035 | Loss=0.0125 | Val MAE=47.8942 | lr=5.00e-04
+2025-10-30 20:53:53,646 - INFO - Epoch 040 | Loss=0.0108 | Val MAE=44.2507 | lr=2.50e-04
+2025-10-30 20:53:55,760 - INFO - Epoch 045 | Loss=0.0089 | Val MAE=37.8416 | lr=2.50e-04
+2025-10-30 20:53:57,824 - INFO - Epoch 050 | Loss=0.0084 | Val MAE=35.4558 | lr=1.25e-04
+2025-10-30 20:53:59,903 - INFO - Epoch 055 | Loss=0.0077 | Val MAE=38.5135 | lr=1.25e-04
+2025-10-30 20:54:02,071 - INFO - Epoch 060 | Loss=0.0071 | Val MAE=35.0210 | lr=6.25e-05
+2025-10-30 20:54:04,237 - INFO - Epoch 065 | Loss=0.0071 | Val MAE=35.0700 | lr=6.25e-05
+2025-10-30 20:54:06,399 - INFO - Epoch 070 | Loss=0.0069 | Val MAE=36.0781 | lr=3.13e-05
+2025-10-30 20:54:08,546 - INFO - Epoch 075 | Loss=0.0067 | Val MAE=34.9361 | lr=1.56e-05
+2025-10-30 20:54:10,682 - INFO - Epoch 080 | Loss=0.0066 | Val MAE=34.9645 | lr=7.81e-06
+2025-10-30 20:54:11,510 - INFO - Early stopping at epoch 82
+2025-10-30 20:54:11,511 - INFO - ============================================================
+2025-10-30 20:54:11,511 - INFO - Training completed!
+2025-10-30 20:54:11,511 - INFO - Model: TRANSFORMER
+2025-10-30 20:54:11,512 - INFO - Best validation MAE: 34.5122
+2025-10-30 20:54:11,512 - INFO - Model saved to: train_results\train_run_transformer_20251030_205334\checkpoints\best_model.pth
+2025-10-30 20:54:11,512 - INFO - ============================================================
+2025-10-30 20:54:11,513 - INFO - Experiment recorded with ID: 6
+2025-10-30 20:54:11,513 - INFO - Generating training curves...
+2025-10-30 20:54:11,917 - INFO - Training curves saved to results directory

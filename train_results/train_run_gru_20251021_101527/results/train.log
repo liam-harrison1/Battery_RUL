@@ -1,0 +1,31 @@
+2025-10-21 10:15:27,636 - INFO - ============================================================
+2025-10-21 10:15:27,636 - INFO - Starting training: Model = GRU
+2025-10-21 10:15:27,636 - INFO - Device: cuda
+2025-10-21 10:15:27,636 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_gru_20251021_101527\\checkpoints', 'results_dir': 'train_results\\train_run_gru_20251021_101527\\results'}, 'data_params': {'window': 30, 'stride': 10, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 200, 'learning_rate': 0.0005, 'weight_decay': 3e-05, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 20, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-21 10:15:27,643 - INFO - ============================================================
+2025-10-21 10:15:27,643 - INFO - Loading data...
+2025-10-21 10:15:27,649 - INFO - Train: X(7425, 30, 10), y(7425,)
+2025-10-21 10:15:27,650 - INFO - Val:   X(1903, 30, 10), y(1903,)
+2025-10-21 10:15:27,650 - INFO - Test:  X(1415, 30, 10), y(1415,)
+2025-10-21 10:15:27,650 - INFO - Fitting StandardScaler on training data...
+2025-10-21 10:15:27,699 - INFO - Saved scaler to train_results\train_run_gru_20251021_101527\checkpoints\scaler.json
+2025-10-21 10:15:27,699 - INFO - Applied y_transform: standardize
+2025-10-21 10:15:27,700 - INFO - Sequence length: 30, Features: 10
+2025-10-21 10:15:27,700 - INFO - Initializing GRU model...
+2025-10-21 10:15:28,490 - INFO - Model parameters: 161,283
+2025-10-21 10:15:28,491 - INFO - Starting training...
+2025-10-21 10:15:29,904 - INFO - Epoch 005 | Loss=0.0630 | Val MAE=114.9239 | lr=5.00e-04
+2025-10-21 10:15:31,017 - INFO - Epoch 010 | Loss=0.0510 | Val MAE=119.8321 | lr=2.50e-04
+2025-10-21 10:15:32,088 - INFO - Epoch 015 | Loss=0.0460 | Val MAE=123.0325 | lr=2.50e-04
+2025-10-21 10:15:33,096 - INFO - Epoch 020 | Loss=0.0431 | Val MAE=117.4355 | lr=1.25e-04
+2025-10-21 10:15:34,103 - INFO - Epoch 025 | Loss=0.0411 | Val MAE=119.1571 | lr=6.25e-05
+2025-10-21 10:15:35,127 - INFO - Epoch 030 | Loss=0.0404 | Val MAE=118.3628 | lr=3.13e-05
+2025-10-21 10:15:35,331 - INFO - Early stopping at epoch 31
+2025-10-21 10:15:35,331 - INFO - ============================================================
+2025-10-21 10:15:35,332 - INFO - Training completed!
+2025-10-21 10:15:35,332 - INFO - Model: GRU
+2025-10-21 10:15:35,332 - INFO - Best validation MAE: 113.2271
+2025-10-21 10:15:35,332 - INFO - Model saved to: train_results\train_run_gru_20251021_101527\checkpoints\best_model.pth
+2025-10-21 10:15:35,332 - INFO - ============================================================
+2025-10-21 10:15:35,332 - INFO - Generating training curves...
+2025-10-21 10:15:35,687 - INFO - Training curves saved to results directory

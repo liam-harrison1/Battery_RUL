@@ -1,0 +1,610 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-10-30 20:39:13",
+    "model": "saetr",
+    "val_mae": 41.61465072631836,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_203847",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 41.61465072631836,
+      "y_mu": 478.6778564453125,
+      "y_sd": 372.4167175392969
+    }
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-10-30 20:41:25",
+    "model": "saetr",
+    "val_mae": 25.395435333251953,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_204047",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 25.395435333251953,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-10-30 20:50:51",
+    "model": "lstm",
+    "val_mae": 110.01580810546875,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_lstm_20251030_205038",
+    "config": {
+      "model_name": "lstm",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 110.01580810546875,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 4,
+    "timestamp": "2025-10-30 20:51:47",
+    "model": "rnn",
+    "val_mae": 106.10613250732422,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_rnn_20251030_205139",
+    "config": {
+      "model_name": "rnn",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 106.10613250732422,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-10-30 20:53:16",
+    "model": "gru",
+    "val_mae": 63.61360168457031,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_gru_20251030_205236",
+    "config": {
+      "model_name": "gru",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 63.61360168457031,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-10-30 20:54:11",
+    "model": "transformer",
+    "val_mae": 34.51220703125,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_transformer_20251030_205334",
+    "config": {
+      "model_name": "transformer",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 34.51220703125,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-10-30 20:59:55",
+    "model": "saetr",
+    "val_mae": 0.0566127635538578,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_205855",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.0566127635538578,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 8,
+    "timestamp": "2025-10-30 21:01:13",
+    "model": "transformer",
+    "val_mae": 0.08064141124486923,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_transformer_20251030_210041",
+    "config": {
+      "model_name": "transformer",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.08064141124486923,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-10-30 21:04:57",
+    "model": "saetr",
+    "val_mae": 0.053831908851861954,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_210415",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 32,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.053831908851861954,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 10,
+    "timestamp": "2025-10-30 21:07:07",
+    "model": "saetr",
+    "val_mae": 0.06915454566478729,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_210614",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 128,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.06915454566478729,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 11,
+    "timestamp": "2025-10-30 21:08:28",
+    "model": "saetr",
+    "val_mae": 0.050564687699079514,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_210737",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 16,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.050564687699079514,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 12,
+    "timestamp": "2025-10-30 21:10:00",
+    "model": "saetr",
+    "val_mae": 0.07182010263204575,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_210933",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 64,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.07182010263204575,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 13,
+    "timestamp": "2025-10-30 21:11:45",
+    "model": "saetr",
+    "val_mae": 0.04975491017103195,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_211046",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 4,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.04975491017103195,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 14,
+    "timestamp": "2025-10-30 21:13:39",
+    "model": "saetr",
+    "val_mae": 0.07959413528442383,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_211204",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 8,
+        "nlayers": 4,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.07959413528442383,
+      "y_mu": 470.72674560546875,
+      "y_sd": 369.4071045021875
+    }
+  },
+  {
+    "id": 15,
+    "timestamp": "2025-10-30 21:15:42",
+    "model": "saetr",
+    "val_mae": 0.05927467346191406,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_saetr_20251030_211437",
+    "config": {
+      "model_name": "saetr",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.05927467346191406,
+      "y_mu": 466.79119873046875,
+      "y_sd": 367.93304444359376
+    }
+  },
+  {
+    "id": 16,
+    "timestamp": "2025-10-30 21:17:06",
+    "model": "transformer",
+    "val_mae": 0.07312384247779846,
+    "path": "H:\\\u79d1\u7814\\\u5bff\u547d\u9884\u6d4b\\SAT\\SAT_proj1\\train_results\\train_run_transformer_20251030_211637",
+    "config": {
+      "model_name": "transformer",
+      "model_params": {
+        "sae_dim": 32,
+        "d_model": 128,
+        "nhead": 4,
+        "nlayers": 2,
+        "use_cnn": true,
+        "cnn_channels": 64,
+        "quantiles": [
+          0.1,
+          0.5,
+          0.9
+        ]
+      },
+      "train_params": {
+        "batch_size": 128,
+        "epochs": 200,
+        "learning_rate": 0.0005,
+        "weight_decay": 3e-05,
+        "alpha_recon": 0.2,
+        "beta_sparse": 0.001,
+        "y_transform": "standardize",
+        "patience": 20,
+        "grad_clip": 1.0
+      },
+      "y_transform": "standardize",
+      "best_val_mae": 0.07312384247779846,
+      "y_mu": 466.79119873046875,
+      "y_sd": 367.93304444359376
+    }
+  }
+]

@@ -1,0 +1,30 @@
+2025-10-16 20:45:17,693 - INFO - ============================================================
+2025-10-16 20:45:17,693 - INFO - Starting prediction on test set
+2025-10-16 20:45:17,693 - INFO - Device: cuda
+2025-10-16 20:45:17,694 - INFO - ============================================================
+2025-10-16 20:45:17,709 - INFO - Target transform mode: standardize
+2025-10-16 20:45:17,709 - INFO - Loading scaler...
+2025-10-16 20:45:17,726 - INFO - Loading sequences...
+2025-10-16 20:45:17,752 - INFO - Test set: X(478, 30, 10), y(478,), meta=478 rows
+2025-10-16 20:45:17,756 - INFO - Loading model...
+2025-10-16 20:45:17,882 - INFO - Loaded model from epoch 17 with val MAE=120.6786
+2025-10-16 20:45:17,882 - INFO - Performing conformal calibration on validation set...
+2025-10-16 20:45:18,014 - INFO - Conformal alpha (tau=0.8): 20.6720
+2025-10-16 20:45:18,015 - INFO - Predicting on test set...
+2025-10-16 20:45:18,021 - INFO - ============================================================
+2025-10-16 20:45:18,021 - INFO - Test Set Performance:
+2025-10-16 20:45:18,021 - INFO -   MAE:  60.8863
+2025-10-16 20:45:18,021 - INFO -   RMSE: 90.8255
+2025-10-16 20:45:18,022 - INFO -   MAPE: 19.78%
+2025-10-16 20:45:18,022 - INFO - ============================================================
+2025-10-16 20:45:18,299 - INFO - Saved scatter plot to train_results\train_run_20251016_204445\predictions\test_scatter_pred_vs_true.png
+2025-10-16 20:45:18,422 - INFO - Prediction interval coverage: 0.862
+2025-10-16 20:45:18,422 - INFO - Saved coverage plot to train_results\train_run_20251016_204445\predictions\quantile_coverage.png
+2025-10-16 20:45:18,431 - INFO - Saved detailed predictions to train_results\train_run_20251016_204445\predictions\predictions_test.csv
+2025-10-16 20:45:18,458 - INFO - Saved per-battery statistics to train_results\train_run_20251016_204445\predictions\battery_statistics.csv
+2025-10-16 20:45:18,458 - INFO - Generating per-battery prediction curves...
+2025-10-16 20:45:20,407 - INFO - Saved 20 battery curves to train_results\train_run_20251016_204445\predictions\per_battery_traces
+2025-10-16 20:45:20,415 - INFO - Saved summary report to train_results\train_run_20251016_204445\predictions\summary_report.txt
+2025-10-16 20:45:20,416 - INFO - ============================================================
+2025-10-16 20:45:20,416 - INFO - Prediction completed successfully!
+2025-10-16 20:45:20,416 - INFO - ============================================================

@@ -1,0 +1,143 @@
+2025-10-30 21:06:14,056 - INFO - ============================================================
+2025-10-30 21:06:14,056 - INFO - Starting training: Model = SAETR
+2025-10-30 21:06:14,056 - INFO - Device: cuda
+2025-10-30 21:06:14,056 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_saetr_20251030_210614\\checkpoints', 'results_dir': 'train_results\\train_run_saetr_20251030_210614\\results'}, 'data_params': {'window': 50, 'stride': 10, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 128, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 200, 'learning_rate': 0.0005, 'weight_decay': 3e-05, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 20, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-30 21:06:14,057 - INFO - ============================================================
+2025-10-30 21:06:14,057 - INFO - Loading data...
+2025-10-30 21:06:14,063 - INFO - Train: X(7239, 50, 10), y(7239,)
+2025-10-30 21:06:14,064 - INFO - Val:   X(1863, 50, 10), y(1863,)
+2025-10-30 21:06:14,064 - INFO - Test:  X(1375, 50, 10), y(1375,)
+2025-10-30 21:06:14,064 - INFO - Fitting StandardScaler on training data...
+2025-10-30 21:06:14,121 - INFO - Saved scaler to train_results\train_run_saetr_20251030_210614\checkpoints\scaler.json
+2025-10-30 21:06:14,121 - INFO - Applied y_transform: standardize
+2025-10-30 21:06:14,121 - INFO - Sequence length: 50, Features: 10
+2025-10-30 21:06:14,121 - INFO - Initializing SAETR model...
+2025-10-30 21:06:14,822 - INFO - Model parameters: 307,917
+2025-10-30 21:06:14,823 - INFO - Starting training...
+2025-10-30 21:06:15,583 - INFO - Validation MAE (transformed scale): 0.3671, (original scale): 135.6060
+2025-10-30 21:06:16,084 - INFO - Validation MAE (transformed scale): 0.3486, (original scale): 128.7866
+2025-10-30 21:06:16,625 - INFO - Validation MAE (transformed scale): 0.3212, (original scale): 118.6419
+2025-10-30 21:06:17,163 - INFO - Validation MAE (transformed scale): 0.3301, (original scale): 121.9268
+2025-10-30 21:06:17,642 - INFO - Validation MAE (transformed scale): 0.3555, (original scale): 131.3279
+2025-10-30 21:06:17,642 - INFO - Epoch 005 | Loss=0.0646 | Val MAE=0.3555 | lr=5.00e-04
+2025-10-30 21:06:18,171 - INFO - Validation MAE (transformed scale): 0.3089, (original scale): 114.0944
+2025-10-30 21:06:18,664 - INFO - Validation MAE (transformed scale): 0.2941, (original scale): 108.6539
+2025-10-30 21:06:19,159 - INFO - Validation MAE (transformed scale): 0.3045, (original scale): 112.4723
+2025-10-30 21:06:19,678 - INFO - Validation MAE (transformed scale): 0.2811, (original scale): 103.8511
+2025-10-30 21:06:20,199 - INFO - Validation MAE (transformed scale): 0.2727, (original scale): 100.7423
+2025-10-30 21:06:20,693 - INFO - Validation MAE (transformed scale): 0.2565, (original scale): 94.7564
+2025-10-30 21:06:21,219 - INFO - Validation MAE (transformed scale): 0.2336, (original scale): 86.2923
+2025-10-30 21:06:21,749 - INFO - Validation MAE (transformed scale): 0.2097, (original scale): 77.4720
+2025-10-30 21:06:22,243 - INFO - Validation MAE (transformed scale): 0.2058, (original scale): 76.0380
+2025-10-30 21:06:22,754 - INFO - Validation MAE (transformed scale): 0.1981, (original scale): 73.1755
+2025-10-30 21:06:23,249 - INFO - Validation MAE (transformed scale): 0.1696, (original scale): 62.6558
+2025-10-30 21:06:23,820 - INFO - Validation MAE (transformed scale): 0.1736, (original scale): 64.1384
+2025-10-30 21:06:24,313 - INFO - Validation MAE (transformed scale): 0.1666, (original scale): 61.5612
+2025-10-30 21:06:24,870 - INFO - Validation MAE (transformed scale): 0.1543, (original scale): 57.0148
+2025-10-30 21:06:25,383 - INFO - Validation MAE (transformed scale): 0.1228, (original scale): 45.3482
+2025-10-30 21:06:25,925 - INFO - Validation MAE (transformed scale): 0.1257, (original scale): 46.4473
+2025-10-30 21:06:26,418 - INFO - Validation MAE (transformed scale): 0.1200, (original scale): 44.3233
+2025-10-30 21:06:26,984 - INFO - Validation MAE (transformed scale): 0.1204, (original scale): 44.4908
+2025-10-30 21:06:27,480 - INFO - Validation MAE (transformed scale): 0.1004, (original scale): 37.0789
+2025-10-30 21:06:28,020 - INFO - Validation MAE (transformed scale): 0.1328, (original scale): 49.0406
+2025-10-30 21:06:28,021 - INFO - Epoch 025 | Loss=0.0193 | Val MAE=0.1328 | lr=5.00e-04
+2025-10-30 21:06:28,536 - INFO - Validation MAE (transformed scale): 0.1110, (original scale): 41.0121
+2025-10-30 21:06:29,034 - INFO - Validation MAE (transformed scale): 0.1040, (original scale): 38.4338
+2025-10-30 21:06:29,518 - INFO - Validation MAE (transformed scale): 0.1031, (original scale): 38.0814
+2025-10-30 21:06:30,039 - INFO - Validation MAE (transformed scale): 0.1033, (original scale): 38.1448
+2025-10-30 21:06:30,537 - INFO - Validation MAE (transformed scale): 0.1148, (original scale): 42.4174
+2025-10-30 21:06:30,537 - INFO - Epoch 030 | Loss=0.0178 | Val MAE=0.1148 | lr=2.50e-04
+2025-10-30 21:06:31,016 - INFO - Validation MAE (transformed scale): 0.0924, (original scale): 34.1424
+2025-10-30 21:06:31,515 - INFO - Validation MAE (transformed scale): 0.0869, (original scale): 32.0893
+2025-10-30 21:06:32,017 - INFO - Validation MAE (transformed scale): 0.0912, (original scale): 33.7001
+2025-10-30 21:06:32,497 - INFO - Validation MAE (transformed scale): 0.0907, (original scale): 33.4958
+2025-10-30 21:06:32,988 - INFO - Validation MAE (transformed scale): 0.0873, (original scale): 32.2532
+2025-10-30 21:06:32,989 - INFO - Epoch 035 | Loss=0.0129 | Val MAE=0.0873 | lr=2.50e-04
+2025-10-30 21:06:33,471 - INFO - Validation MAE (transformed scale): 0.0931, (original scale): 34.3901
+2025-10-30 21:06:33,953 - INFO - Validation MAE (transformed scale): 0.0902, (original scale): 33.3118
+2025-10-30 21:06:34,440 - INFO - Validation MAE (transformed scale): 0.0813, (original scale): 30.0442
+2025-10-30 21:06:34,952 - INFO - Validation MAE (transformed scale): 0.0857, (original scale): 31.6741
+2025-10-30 21:06:35,454 - INFO - Validation MAE (transformed scale): 0.0802, (original scale): 29.6354
+2025-10-30 21:06:35,959 - INFO - Validation MAE (transformed scale): 0.0844, (original scale): 31.1736
+2025-10-30 21:06:36,438 - INFO - Validation MAE (transformed scale): 0.0812, (original scale): 29.9778
+2025-10-30 21:06:36,919 - INFO - Validation MAE (transformed scale): 0.0860, (original scale): 31.7669
+2025-10-30 21:06:37,407 - INFO - Validation MAE (transformed scale): 0.0880, (original scale): 32.5039
+2025-10-30 21:06:37,895 - INFO - Validation MAE (transformed scale): 0.0804, (original scale): 29.6884
+2025-10-30 21:06:37,895 - INFO - Epoch 045 | Loss=0.0121 | Val MAE=0.0804 | lr=2.50e-04
+2025-10-30 21:06:38,395 - INFO - Validation MAE (transformed scale): 0.0823, (original scale): 30.3840
+2025-10-30 21:06:38,878 - INFO - Validation MAE (transformed scale): 0.0761, (original scale): 28.1176
+2025-10-30 21:06:39,385 - INFO - Validation MAE (transformed scale): 0.0832, (original scale): 30.7220
+2025-10-30 21:06:39,875 - INFO - Validation MAE (transformed scale): 0.0789, (original scale): 29.1476
+2025-10-30 21:06:40,361 - INFO - Validation MAE (transformed scale): 0.0762, (original scale): 28.1486
+2025-10-30 21:06:40,363 - INFO - Epoch 050 | Loss=0.0102 | Val MAE=0.0762 | lr=1.25e-04
+2025-10-30 21:06:40,855 - INFO - Validation MAE (transformed scale): 0.0800, (original scale): 29.5570
+2025-10-30 21:06:41,343 - INFO - Validation MAE (transformed scale): 0.0760, (original scale): 28.0696
+2025-10-30 21:06:41,842 - INFO - Validation MAE (transformed scale): 0.0736, (original scale): 27.2054
+2025-10-30 21:06:42,363 - INFO - Validation MAE (transformed scale): 0.0772, (original scale): 28.5223
+2025-10-30 21:06:42,857 - INFO - Validation MAE (transformed scale): 0.0824, (original scale): 30.4512
+2025-10-30 21:06:42,857 - INFO - Epoch 055 | Loss=0.0098 | Val MAE=0.0824 | lr=1.25e-04
+2025-10-30 21:06:43,331 - INFO - Validation MAE (transformed scale): 0.0704, (original scale): 26.0132
+2025-10-30 21:06:43,831 - INFO - Validation MAE (transformed scale): 0.0742, (original scale): 27.4051
+2025-10-30 21:06:44,326 - INFO - Validation MAE (transformed scale): 0.0738, (original scale): 27.2469
+2025-10-30 21:06:44,820 - INFO - Validation MAE (transformed scale): 0.0718, (original scale): 26.5110
+2025-10-30 21:06:45,308 - INFO - Validation MAE (transformed scale): 0.0760, (original scale): 28.0727
+2025-10-30 21:06:45,308 - INFO - Epoch 060 | Loss=0.0098 | Val MAE=0.0760 | lr=1.25e-04
+2025-10-30 21:06:45,791 - INFO - Validation MAE (transformed scale): 0.0767, (original scale): 28.3343
+2025-10-30 21:06:46,276 - INFO - Validation MAE (transformed scale): 0.0728, (original scale): 26.8908
+2025-10-30 21:06:46,756 - INFO - Validation MAE (transformed scale): 0.0750, (original scale): 27.7107
+2025-10-30 21:06:47,247 - INFO - Validation MAE (transformed scale): 0.0732, (original scale): 27.0388
+2025-10-30 21:06:47,757 - INFO - Validation MAE (transformed scale): 0.0730, (original scale): 26.9710
+2025-10-30 21:06:47,757 - INFO - Epoch 065 | Loss=0.0092 | Val MAE=0.0730 | lr=6.25e-05
+2025-10-30 21:06:48,231 - INFO - Validation MAE (transformed scale): 0.0715, (original scale): 26.4186
+2025-10-30 21:06:48,728 - INFO - Validation MAE (transformed scale): 0.0745, (original scale): 27.5082
+2025-10-30 21:06:49,243 - INFO - Validation MAE (transformed scale): 0.0730, (original scale): 26.9848
+2025-10-30 21:06:49,723 - INFO - Validation MAE (transformed scale): 0.0703, (original scale): 25.9853
+2025-10-30 21:06:50,225 - INFO - Validation MAE (transformed scale): 0.0720, (original scale): 26.5957
+2025-10-30 21:06:50,225 - INFO - Epoch 070 | Loss=0.0087 | Val MAE=0.0720 | lr=3.13e-05
+2025-10-30 21:06:50,719 - INFO - Validation MAE (transformed scale): 0.0718, (original scale): 26.5409
+2025-10-30 21:06:51,238 - INFO - Validation MAE (transformed scale): 0.0730, (original scale): 26.9726
+2025-10-30 21:06:51,771 - INFO - Validation MAE (transformed scale): 0.0703, (original scale): 25.9729
+2025-10-30 21:06:52,317 - INFO - Validation MAE (transformed scale): 0.0711, (original scale): 26.2619
+2025-10-30 21:06:52,832 - INFO - Validation MAE (transformed scale): 0.0711, (original scale): 26.2731
+2025-10-30 21:06:52,832 - INFO - Epoch 075 | Loss=0.0084 | Val MAE=0.0711 | lr=3.13e-05
+2025-10-30 21:06:53,350 - INFO - Validation MAE (transformed scale): 0.0721, (original scale): 26.6169
+2025-10-30 21:06:53,864 - INFO - Validation MAE (transformed scale): 0.0707, (original scale): 26.1338
+2025-10-30 21:06:54,386 - INFO - Validation MAE (transformed scale): 0.0706, (original scale): 26.0979
+2025-10-30 21:06:54,910 - INFO - Validation MAE (transformed scale): 0.0712, (original scale): 26.3064
+2025-10-30 21:06:55,440 - INFO - Validation MAE (transformed scale): 0.0717, (original scale): 26.4953
+2025-10-30 21:06:55,440 - INFO - Epoch 080 | Loss=0.0083 | Val MAE=0.0717 | lr=1.56e-05
+2025-10-30 21:06:55,984 - INFO - Validation MAE (transformed scale): 0.0692, (original scale): 25.5462
+2025-10-30 21:06:56,526 - INFO - Validation MAE (transformed scale): 0.0721, (original scale): 26.6302
+2025-10-30 21:06:57,059 - INFO - Validation MAE (transformed scale): 0.0715, (original scale): 26.4231
+2025-10-30 21:06:57,580 - INFO - Validation MAE (transformed scale): 0.0701, (original scale): 25.8832
+2025-10-30 21:06:58,111 - INFO - Validation MAE (transformed scale): 0.0713, (original scale): 26.3393
+2025-10-30 21:06:58,112 - INFO - Epoch 085 | Loss=0.0083 | Val MAE=0.0713 | lr=1.56e-05
+2025-10-30 21:06:58,634 - INFO - Validation MAE (transformed scale): 0.0695, (original scale): 25.6859
+2025-10-30 21:06:59,156 - INFO - Validation MAE (transformed scale): 0.0705, (original scale): 26.0552
+2025-10-30 21:06:59,721 - INFO - Validation MAE (transformed scale): 0.0719, (original scale): 26.5696
+2025-10-30 21:07:00,330 - INFO - Validation MAE (transformed scale): 0.0706, (original scale): 26.0927
+2025-10-30 21:07:00,889 - INFO - Validation MAE (transformed scale): 0.0718, (original scale): 26.5123
+2025-10-30 21:07:00,889 - INFO - Epoch 090 | Loss=0.0083 | Val MAE=0.0718 | lr=7.81e-06
+2025-10-30 21:07:01,490 - INFO - Validation MAE (transformed scale): 0.0719, (original scale): 26.5628
+2025-10-30 21:07:02,023 - INFO - Validation MAE (transformed scale): 0.0702, (original scale): 25.9318
+2025-10-30 21:07:02,551 - INFO - Validation MAE (transformed scale): 0.0719, (original scale): 26.5675
+2025-10-30 21:07:03,122 - INFO - Validation MAE (transformed scale): 0.0708, (original scale): 26.1597
+2025-10-30 21:07:03,772 - INFO - Validation MAE (transformed scale): 0.0711, (original scale): 26.2498
+2025-10-30 21:07:03,774 - INFO - Epoch 095 | Loss=0.0081 | Val MAE=0.0711 | lr=3.91e-06
+2025-10-30 21:07:04,461 - INFO - Validation MAE (transformed scale): 0.0705, (original scale): 26.0565
+2025-10-30 21:07:05,106 - INFO - Validation MAE (transformed scale): 0.0710, (original scale): 26.2349
+2025-10-30 21:07:05,850 - INFO - Validation MAE (transformed scale): 0.0707, (original scale): 26.1253
+2025-10-30 21:07:06,454 - INFO - Validation MAE (transformed scale): 0.0703, (original scale): 25.9670
+2025-10-30 21:07:07,032 - INFO - Validation MAE (transformed scale): 0.0706, (original scale): 26.0722
+2025-10-30 21:07:07,033 - INFO - Epoch 100 | Loss=0.0081 | Val MAE=0.0706 | lr=1.95e-06
+2025-10-30 21:07:07,565 - INFO - Validation MAE (transformed scale): 0.0707, (original scale): 26.1310
+2025-10-30 21:07:07,566 - INFO - Early stopping at epoch 101
+2025-10-30 21:07:07,572 - INFO - ============================================================
+2025-10-30 21:07:07,572 - INFO - Training completed!
+2025-10-30 21:07:07,573 - INFO - Model: SAETR
+2025-10-30 21:07:07,573 - INFO - Best validation MAE: 0.0692
+2025-10-30 21:07:07,573 - INFO - Model saved to: train_results\train_run_saetr_20251030_210614\checkpoints\best_model.pth
+2025-10-30 21:07:07,573 - INFO - ============================================================
+2025-10-30 21:07:07,575 - INFO - Experiment recorded with ID: 10
+2025-10-30 21:07:07,575 - INFO - Generating training curves...
+2025-10-30 21:07:07,897 - INFO - Training curves saved to results directory

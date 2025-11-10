@@ -1,0 +1,40 @@
+2025-10-16 20:46:49,699 - INFO - ============================================================
+2025-10-16 20:46:49,700 - INFO - Starting training with configuration:
+2025-10-16 20:46:49,700 - INFO - Device: cuda
+2025-10-16 20:46:49,700 - INFO - Config: {'paths': {'data_dir': 'data/final_dataset', 'processed_dir': 'data/processed', 'experiment_base_dir': 'train_results', 'checkpoint_dir': 'train_results\\train_run_20251016_204649\\checkpoints', 'results_dir': 'train_results\\train_run_20251016_204649\\results'}, 'data_params': {'window': 50, 'stride': 50, 'min_cycles': 180}, 'model_params': {'sae_dim': 32, 'd_model': 128, 'nhead': 4, 'nlayers': 2, 'use_cnn': True, 'cnn_channels': 64, 'quantiles': [0.1, 0.5, 0.9]}, 'train_params': {'batch_size': 128, 'epochs': 150, 'learning_rate': 0.0003, 'weight_decay': 0.0001, 'alpha_recon': 0.2, 'beta_sparse': 0.001, 'y_transform': 'standardize', 'patience': 15, 'grad_clip': 1.0}, 'eval_params': {'tau': 0.8}, 'early_prediction': {'thresholds': [30, 50, 75, 100, 150], 'min_cycles': 20, 'methods': ['saetr', 'partial_discharge', 'knee_point', 'ensemble'], 'knee_detection': {'threshold_drop': 0.02, 'min_cycles_before_knee': 30}, 'partial_discharge': {'voltage_range': [3.5, 3.1]}, 'iterative': {'max_future_cycles': 500, 'feature_prediction_method': 'linear'}}}
+2025-10-16 20:46:49,700 - INFO - ============================================================
+2025-10-16 20:46:49,701 - INFO - Loading data...
+2025-10-16 20:46:55,566 - INFO - Train: X(1482, 50, 10), y(1482,)
+2025-10-16 20:46:55,567 - INFO - Val:   X(381, 50, 10), y(381,)
+2025-10-16 20:46:55,567 - INFO - Test:  X(285, 50, 10), y(285,)
+2025-10-16 20:46:55,567 - INFO - Fitting StandardScaler on training data...
+2025-10-16 20:46:55,595 - INFO - Saved scaler to train_results\train_run_20251016_204649\checkpoints\scaler.json
+2025-10-16 20:46:55,597 - INFO - Applied y_transform: standardize
+2025-10-16 20:46:55,598 - INFO - Sequence length: 50, Features: 10
+2025-10-16 20:46:55,599 - INFO - Initializing model...
+2025-10-16 20:46:56,434 - INFO - Model parameters: 295,565
+2025-10-16 20:46:56,435 - INFO - Starting training...
+2025-10-16 20:47:00,362 - INFO - Epoch 035 | Loss=0.0534 | Val MAE=106.8664 | lr=3.00e-04
+2025-10-16 20:47:01,365 - INFO - Epoch 045 | Loss=0.0454 | Val MAE=92.5155 | lr=3.00e-04
+2025-10-16 20:47:01,864 - INFO - Epoch 050 | Loss=0.0483 | Val MAE=96.3492 | lr=3.00e-04
+2025-10-16 20:47:02,305 - INFO - Epoch 055 | Loss=0.0389 | Val MAE=85.6438 | lr=1.50e-04
+2025-10-16 20:47:02,804 - INFO - Epoch 060 | Loss=0.0356 | Val MAE=81.0993 | lr=1.50e-04
+2025-10-16 20:47:03,311 - INFO - Epoch 065 | Loss=0.0351 | Val MAE=75.2026 | lr=1.50e-04
+2025-10-16 20:47:04,282 - INFO - Epoch 075 | Loss=0.0334 | Val MAE=72.3898 | lr=1.50e-04
+2025-10-16 20:47:04,798 - INFO - Epoch 080 | Loss=0.0331 | Val MAE=72.3380 | lr=1.50e-04
+2025-10-16 20:47:06,255 - INFO - Epoch 095 | Loss=0.0304 | Val MAE=67.4744 | lr=1.50e-04
+2025-10-16 20:47:06,695 - INFO - Epoch 100 | Loss=0.0287 | Val MAE=65.4512 | lr=7.50e-05
+2025-10-16 20:47:07,161 - INFO - Epoch 105 | Loss=0.0282 | Val MAE=63.4860 | lr=7.50e-05
+2025-10-16 20:47:08,094 - INFO - Epoch 115 | Loss=0.0277 | Val MAE=62.1669 | lr=3.75e-05
+2025-10-16 20:47:08,579 - INFO - Epoch 120 | Loss=0.0278 | Val MAE=63.0999 | lr=1.87e-05
+2025-10-16 20:47:09,040 - INFO - Epoch 125 | Loss=0.0260 | Val MAE=61.6154 | lr=1.87e-05
+2025-10-16 20:47:09,490 - INFO - Epoch 130 | Loss=0.0269 | Val MAE=62.4287 | lr=9.37e-06
+2025-10-16 20:47:09,954 - INFO - Epoch 135 | Loss=0.0262 | Val MAE=62.4802 | lr=4.69e-06
+2025-10-16 20:47:10,061 - INFO - Early stopping at epoch 136
+2025-10-16 20:47:10,063 - INFO - ============================================================
+2025-10-16 20:47:10,063 - INFO - Training completed!
+2025-10-16 20:47:10,063 - INFO - Best validation MAE: 61.2949
+2025-10-16 20:47:10,064 - INFO - Model saved to: train_results\train_run_20251016_204649\checkpoints\best_model.pth
+2025-10-16 20:47:10,064 - INFO - ============================================================
+2025-10-16 20:47:10,064 - INFO - Generating training curves...
+2025-10-16 20:47:10,410 - INFO - Training curves saved to results directory
